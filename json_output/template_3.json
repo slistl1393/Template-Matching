@@ -1,0 +1,48 @@
+{
+  "template": "template_3",
+  "count": 3,
+  "matches": [
+    {
+      "template": "template_3",
+      "position": {
+        "x": 4300,
+        "y": 5355
+      },
+      "confidence": 0.7740177512168884,
+      "bounding_box": [
+        4300,
+        5355,
+        54,
+        42
+      ]
+    },
+    {
+      "template": "template_3",
+      "position": {
+        "x": 2603,
+        "y": 1435
+      },
+      "confidence": 0.7621516585350037,
+      "bounding_box": [
+        2603,
+        1435,
+        61,
+        46
+      ]
+    },
+    {
+      "template": "template_3",
+      "position": {
+        "x": 2839,
+        "y": 1435
+      },
+      "confidence": 0.7610815167427063,
+      "bounding_box": [
+        2839,
+        1435,
+        61,
+        46
+      ]
+    }
+  ]
+}

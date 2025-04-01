@@ -1,0 +1,34 @@
+{
+  "template": "template_4",
+  "count": 2,
+  "matches": [
+    {
+      "template": "template_4",
+      "position": {
+        "x": 4300,
+        "y": 5293
+      },
+      "confidence": 0.7764022946357727,
+      "bounding_box": [
+        4300,
+        5293,
+        54,
+        42
+      ]
+    },
+    {
+      "template": "template_4",
+      "position": {
+        "x": 1069,
+        "y": 1438
+      },
+      "confidence": 0.7694359421730042,
+      "bounding_box": [
+        1069,
+        1438,
+        54,
+        42
+      ]
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "template": "template_55_534",
+  "count": 1,
+  "matches": [
+    {
+      "template": "template_55_534",
+      "position": {
+        "x": 4300,
+        "y": 5479
+      },
+      "confidence": 0.7733240127563477,
+      "bounding_box": [
+        4300,
+        5479,
+        54,
+        42
+      ],
+      "bauteil": "Egcobox MM80-V4-C35-h200-REI120-PS-C1"
+    }
+  ]
+}

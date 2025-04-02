@@ -1,0 +1,36 @@
+{
+  "template": "template_55_410",
+  "count": 2,
+  "matches": [
+    {
+      "template": "template_55_410",
+      "position": {
+        "x": 4300,
+        "y": 5417
+      },
+      "confidence": 0.7880011200904846,
+      "bounding_box": [
+        4300,
+        5417,
+        54,
+        42
+      ],
+      "bauteil": "Egcobox MM80-V8t-C35-h200-REI120-PS-C1"
+    },
+    {
+      "template": "template_55_410",
+      "position": {
+        "x": 4400,
+        "y": 1435
+      },
+      "confidence": 0.7686960101127625,
+      "bounding_box": [
+        4400,
+        1435,
+        61,
+        46
+      ],
+      "bauteil": "Egcobox MM80-V8t-C35-h200-REI120-PS-C1"
+    }
+  ]
+}

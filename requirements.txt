@@ -1,6 +1,8 @@
 streamlit
 opencv-python-headless==4.7.0.72
 numpy<2.0
+plotly
+requests
 pandas
 matplotlib
 Pillow

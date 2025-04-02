@@ -33,8 +33,8 @@ def load_plan_image_from_github(url="https://raw.githubusercontent.com/slistl139
     response = requests.get(url)
     return Image.open(BytesIO(response.content))
 
-# --- Visualisierung der Treffer auf dem Plan ---
-def visualize_matches_on_plan(matches):
+# --- Visualisierung der Treffer ---
+def visualize_plan_with_matches(plan_image, matches):
     if not matches:
         st.info("Keine Treffer gefunden.")
         return
@@ -48,11 +48,17 @@ def visualize_matches_on_plan(matches):
         } for m in matches
     ])
 
-    fig = px.scatter(
-        df, x="x", y="y", color="bauteil", hover_data=["template"],
-        title="📍 Treffer auf dem Gesamtplan", width=1200, height=800
+    fig = px.imshow(plan_image, binary_format="jpg")
+    fig.update_layout(
+        title="📍 Treffer auf dem Gesamtplan",
+        width=1200,
+        height=800
     )
-    fig.update_layout(yaxis=dict(autorange="reversed"))
+    fig.add_scatter(
+        x=df["x"], y=df["y"], mode="markers", marker=dict(size=10, color="red"),
+        text=df["bauteil"], name="Treffer"
+    )
+    fig.update_yaxes(autorange="reversed")
     st.plotly_chart(fig, use_container_width=True)
 
 # --- Streamlit App ---
@@ -68,7 +74,9 @@ if not all_templates:
     st.warning("⚠️ Keine JSON-Daten gefunden. Stelle sicher, dass GitHub-Repo korrekt befüllt ist.")
 else:
     for template in all_templates:
-        bauteil = template.get("bauteil", "Unbekannt")
+        # Versuche Bauteilname aus Match-Daten zu extrahieren, falls nicht explizit vorhanden
+        first_match = template.get("matches", [{}])[0]
+        bauteil = template.get("bauteil") or first_match.get("bauteil", "Unbekannt")
         count = template.get("count", len(template.get("matches", [])))
 
         with st.expander(f"{bauteil} ({count}x erkannt)"):
@@ -84,11 +92,9 @@ else:
 
 # --- Bildanzeige und Treffer ---
 st.header("🗺️ Treffer auf Gesamtplan")
-image = load_plan_image_from_github()
-st.image(image, caption="Gesamtplan (Ausschnitt)", use_column_width=True)
-
-# --- Zoombare Plotly-Karte ---
+plan_image = load_plan_image_from_github()
 all_matches = [m for t in all_templates for m in t.get("matches", [])]
-visualize_matches_on_plan(all_matches)
+visualize_plan_with_matches(plan_image, all_matches)
 
 st.success("✅ Daten erfolgreich geladen und visualisiert.")
+

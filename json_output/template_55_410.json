@@ -1,6 +1,6 @@
 {
   "template": "template_55_410",
-  "count": 1,
+  "count": 2,
   "matches": [
     {
       "template": "template_55_410",
@@ -12,6 +12,21 @@
       "bounding_box": [
         3582,
         4513,
+        48,
+        37
+      ],
+      "bauteil": "Egcobox MM80-V8t-C35-h200-REI120-PS-C1"
+    },
+    {
+      "template": "template_55_410",
+      "position": {
+        "x": 3668,
+        "y": 1197
+      },
+      "confidence": 0.9246414303779602,
+      "bounding_box": [
+        3668,
+        1197,
         48,
         37
       ],

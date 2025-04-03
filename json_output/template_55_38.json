@@ -1,17 +1,17 @@
 {
   "template": "template_55_38",
-  "count": 4,
+  "count": 5,
   "matches": [
     {
       "template": "template_55_38",
       "position": {
-        "x": 4300,
-        "y": 5231
+        "x": 3064,
+        "y": 2112
       },
-      "confidence": 0.8047239184379578,
+      "confidence": 0.7621317505836487,
       "bounding_box": [
-        4300,
-        5231,
+        3064,
+        2112,
         54,
         42
       ],
@@ -20,45 +20,60 @@
     {
       "template": "template_55_38",
       "position": {
-        "x": 2229,
-        "y": 1435
+        "x": 5511,
+        "y": 259
       },
-      "confidence": 0.7768634557723999,
+      "confidence": 0.76175457239151,
       "bounding_box": [
-        2229,
-        1435,
-        61,
-        46
+        5511,
+        259,
+        54,
+        42
       ],
       "bauteil": "Egcobox MM55-WU300-V1-C35-h200-REI120-PS-C1"
     },
     {
       "template": "template_55_38",
       "position": {
-        "x": 4598,
-        "y": 3301
+        "x": 1652,
+        "y": 259
       },
-      "confidence": 0.7768388390541077,
+      "confidence": 0.7615548372268677,
       "bounding_box": [
-        4598,
-        3301,
-        41,
-        32
+        1652,
+        259,
+        54,
+        42
       ],
       "bauteil": "Egcobox MM55-WU300-V1-C35-h200-REI120-PS-C1"
     },
     {
       "template": "template_55_38",
       "position": {
-        "x": 9852,
-        "y": 1529
+        "x": 3148,
+        "y": 259
       },
-      "confidence": 0.7643176317214966,
+      "confidence": 0.7613351345062256,
       "bounding_box": [
-        9852,
-        1529,
-        73,
-        56
+        3148,
+        259,
+        54,
+        42
+      ],
+      "bauteil": "Egcobox MM55-WU300-V1-C35-h200-REI120-PS-C1"
+    },
+    {
+      "template": "template_55_38",
+      "position": {
+        "x": 4330,
+        "y": 259
+      },
+      "confidence": 0.7613021731376648,
+      "bounding_box": [
+        4330,
+        259,
+        54,
+        42
       ],
       "bauteil": "Egcobox MM55-WU300-V1-C35-h200-REI120-PS-C1"
     }

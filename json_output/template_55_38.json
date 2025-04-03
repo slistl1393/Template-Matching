@@ -1,79 +1,214 @@
 {
   "template": "template_55_38",
-  "count": 5,
+  "count": 14,
   "matches": [
     {
       "template": "template_55_38",
       "position": {
-        "x": 3064,
-        "y": 2112
+        "x": 1661,
+        "y": 1199
       },
-      "confidence": 0.7621317505836487,
+      "confidence": 0.962432324886322,
       "bounding_box": [
-        3064,
-        2112,
-        54,
-        42
+        1661,
+        1199,
+        48,
+        37
       ],
       "bauteil": "Egcobox MM55-WU300-V1-C35-h200-REI120-PS-C1"
     },
     {
       "template": "template_55_38",
       "position": {
-        "x": 5511,
-        "y": 259
+        "x": 3582,
+        "y": 4358
       },
-      "confidence": 0.76175457239151,
+      "confidence": 0.9604244828224182,
       "bounding_box": [
-        5511,
-        259,
-        54,
-        42
+        3582,
+        4358,
+        48,
+        37
       ],
       "bauteil": "Egcobox MM55-WU300-V1-C35-h200-REI120-PS-C1"
     },
     {
       "template": "template_55_38",
       "position": {
-        "x": 1652,
-        "y": 259
+        "x": 1859,
+        "y": 1197
       },
-      "confidence": 0.7615548372268677,
+      "confidence": 0.9404752254486084,
       "bounding_box": [
-        1652,
-        259,
-        54,
-        42
+        1859,
+        1197,
+        48,
+        37
       ],
       "bauteil": "Egcobox MM55-WU300-V1-C35-h200-REI120-PS-C1"
     },
     {
       "template": "template_55_38",
       "position": {
-        "x": 3148,
-        "y": 259
+        "x": 3669,
+        "y": 1197
       },
-      "confidence": 0.7613351345062256,
+      "confidence": 0.8486641049385071,
       "bounding_box": [
-        3148,
-        259,
-        54,
-        42
+        3669,
+        1197,
+        48,
+        37
       ],
       "bauteil": "Egcobox MM55-WU300-V1-C35-h200-REI120-PS-C1"
     },
     {
       "template": "template_55_38",
       "position": {
-        "x": 4330,
-        "y": 259
+        "x": 3582,
+        "y": 4513
       },
-      "confidence": 0.7613021731376648,
+      "confidence": 0.8474951982498169,
       "bounding_box": [
-        4330,
-        259,
-        54,
-        42
+        3582,
+        4513,
+        48,
+        37
+      ],
+      "bauteil": "Egcobox MM55-WU300-V1-C35-h200-REI120-PS-C1"
+    },
+    {
+      "template": "template_55_38",
+      "position": {
+        "x": 3582,
+        "y": 4668
+      },
+      "confidence": 0.8414467573165894,
+      "bounding_box": [
+        3582,
+        4668,
+        48,
+        37
+      ],
+      "bauteil": "Egcobox MM55-WU300-V1-C35-h200-REI120-PS-C1"
+    },
+    {
+      "template": "template_55_38",
+      "position": {
+        "x": 4822,
+        "y": 4197
+      },
+      "confidence": 0.8188304305076599,
+      "bounding_box": [
+        4822,
+        4197,
+        48,
+        37
+      ],
+      "bauteil": "Egcobox MM55-WU300-V1-C35-h200-REI120-PS-C1"
+    },
+    {
+      "template": "template_55_38",
+      "position": {
+        "x": 3582,
+        "y": 4409
+      },
+      "confidence": 0.8090596199035645,
+      "bounding_box": [
+        3582,
+        4409,
+        48,
+        37
+      ],
+      "bauteil": "Egcobox MM55-WU300-V1-C35-h200-REI120-PS-C1"
+    },
+    {
+      "template": "template_55_38",
+      "position": {
+        "x": 890,
+        "y": 1197
+      },
+      "confidence": 0.8047525882720947,
+      "bounding_box": [
+        890,
+        1197,
+        48,
+        37
+      ],
+      "bauteil": "Egcobox MM55-WU300-V1-C35-h200-REI120-PS-C1"
+    },
+    {
+      "template": "template_55_38",
+      "position": {
+        "x": 2367,
+        "y": 1197
+      },
+      "confidence": 0.7737846374511719,
+      "bounding_box": [
+        2367,
+        1197,
+        48,
+        37
+      ],
+      "bauteil": "Egcobox MM55-WU300-V1-C35-h200-REI120-PS-C1"
+    },
+    {
+      "template": "template_55_38",
+      "position": {
+        "x": 3190,
+        "y": 1197
+      },
+      "confidence": 0.7713543772697449,
+      "bounding_box": [
+        3190,
+        1197,
+        48,
+        37
+      ],
+      "bauteil": "Egcobox MM55-WU300-V1-C35-h200-REI120-PS-C1"
+    },
+    {
+      "template": "template_55_38",
+      "position": {
+        "x": 3582,
+        "y": 4565
+      },
+      "confidence": 0.7709667682647705,
+      "bounding_box": [
+        3582,
+        4565,
+        48,
+        37
+      ],
+      "bauteil": "Egcobox MM55-WU300-V1-C35-h200-REI120-PS-C1"
+    },
+    {
+      "template": "template_55_38",
+      "position": {
+        "x": 3582,
+        "y": 4461
+      },
+      "confidence": 0.7657191157341003,
+      "bounding_box": [
+        3582,
+        4461,
+        48,
+        37
+      ],
+      "bauteil": "Egcobox MM55-WU300-V1-C35-h200-REI120-PS-C1"
+    },
+    {
+      "template": "template_55_38",
+      "position": {
+        "x": 7159,
+        "y": 3258
+      },
+      "confidence": 0.7610416412353516,
+      "bounding_box": [
+        7159,
+        3258,
+        61,
+        46
       ],
       "bauteil": "Egcobox MM55-WU300-V1-C35-h200-REI120-PS-C1"
     }

@@ -1,6 +1,6 @@
 {
   "template": "template_55_286",
-  "count": 5,
+  "count": 3,
   "matches": [
     {
       "template": "template_55_286",
@@ -42,36 +42,6 @@
       "bounding_box": [
         3582,
         4461,
-        48,
-        37
-      ],
-      "bauteil": "Egcobox MM60-V4-C35-h200-REI120-PS-C1"
-    },
-    {
-      "template": "template_55_286",
-      "position": {
-        "x": 2170,
-        "y": 1197
-      },
-      "confidence": 0.925714910030365,
-      "bounding_box": [
-        2170,
-        1197,
-        48,
-        37
-      ],
-      "bauteil": "Egcobox MM60-V4-C35-h200-REI120-PS-C1"
-    },
-    {
-      "template": "template_55_286",
-      "position": {
-        "x": 3582,
-        "y": 4720
-      },
-      "confidence": 0.9119776487350464,
-      "bounding_box": [
-        3582,
-        4720,
         48,
         37
       ],

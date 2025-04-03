@@ -11,8 +11,8 @@ import plotly.express as px
 @st.cache_data
 def load_all_matches_from_github(repo="slistl1393/Template-Matching", folder="json_output", branch="main"):
     url = f"https://api.github.com/repos/{repo}/contents/{folder}?ref={branch}"
-    token = st.secrets.get("github_token", "")  # alternativ: aus Umgebungsvariable laden
-    headers = {"Authorization": f"token {token}"} if token else {}
+    token = st.secrets["github_token"]
+    headers = {"Authorization": f"token {token}"}
 
     response = requests.get(url, headers=headers)
 

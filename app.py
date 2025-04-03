@@ -11,13 +11,26 @@ import plotly.express as px
 @st.cache_data
 def load_all_matches_from_github(repo="slistl1393/Template-Matching", folder="json_output", branch="main"):
     url = f"https://api.github.com/repos/{repo}/contents/{folder}?ref={branch}"
-    files = requests.get(url).json()
+    response = requests.get(url)
+
+    try:
+        files = response.json()
+    except json.JSONDecodeError:
+        st.error("❌ Antwort von GitHub konnte nicht als JSON interpretiert werden.")
+        return []
+
+    if not isinstance(files, list):
+        st.error(f"❌ Unerwartetes Antwortformat von GitHub: {files}")
+        return []
 
     all_data = []
     for file in files:
-        if file["name"].endswith(".json"):
-            content = requests.get(file["download_url"]).json()
-            all_data.append(content)
+        if isinstance(file, dict) and file.get("name", "").endswith(".json"):
+            try:
+                content = requests.get(file["download_url"]).json()
+                all_data.append(content)
+            except Exception as e:
+                st.warning(f"⚠️ Fehler beim Laden von {file['name']}: {e}")
     return all_data
 
 @st.cache_data

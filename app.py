@@ -11,7 +11,10 @@ import plotly.express as px
 @st.cache_data
 def load_all_matches_from_github(repo="slistl1393/Template-Matching", folder="json_output", branch="main"):
     url = f"https://api.github.com/repos/{repo}/contents/{folder}?ref={branch}"
-    response = requests.get(url)
+    token = st.secrets.get("github_token", "")  # alternativ: aus Umgebungsvariable laden
+    headers = {"Authorization": f"token {token}"} if token else {}
+
+    response = requests.get(url, headers=headers)
 
     try:
         files = response.json()
@@ -27,11 +30,12 @@ def load_all_matches_from_github(repo="slistl1393/Template-Matching", folder="js
     for file in files:
         if isinstance(file, dict) and file.get("name", "").endswith(".json"):
             try:
-                content = requests.get(file["download_url"]).json()
+                content = requests.get(file["download_url"], headers=headers).json()
                 all_data.append(content)
             except Exception as e:
                 st.warning(f"⚠️ Fehler beim Laden von {file['name']}: {e}")
     return all_data
+
 
 @st.cache_data
 def load_bauteil_infos(info_file_url="https://raw.githubusercontent.com/slistl1393/Template-Matching/main/bauteil_info.json"):
